@@ -1,0 +1,27 @@
+{
+  "name": "truthguard-ai",
+  "version": "1.0.0",
+  "description": "TruthGuard AI — A Free, Privacy-First Fake News & Scam Checker",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "build": "npm run build --workspace=client && npm run build --workspace=server",
+    "test": "npm run test --workspace=server",
+    "start": "node server/dist/index.js"
+  },
+  "keywords": [
+    "fake-news-detector",
+    "scam-checker",
+    "phishing-detection",
+    "privacy-first",
+    "fact-check",
+    "cybersecurity"
+  ],
+  "author": "TruthGuard AI Team",
+  "license": "MIT"
+}
